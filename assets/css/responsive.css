@@ -1,4 +1,47 @@
  
+ @media all and (max-width:1400px){
+    .first_roadmap { 
+        top: 48px; 
+        left: 70px;
+    }
+    .single_stage ul li p { 
+        font-size: 14px; 
+        line-height: 31px; 
+    }
+    .single_stage h4 { 
+        font-size: 17px; 
+    }
+    .second_roadmap { 
+        top: 236px;
+        right: 232px;
+    }
+    .third_roadmap { 
+        top: 429px;
+        left: 70px;
+    }
+    .last_roadmap { 
+        top: 609px;
+        right: 232px;
+    }
+    #roadmap > img { 
+        width: 130px;
+        bottom: -37px;
+    }
+    .share_img img {
+        width: 491px; 
+    }
+    .share_box { 
+        padding: 61px 60px; 
+    }
+    .adevnture_left h2, .banner_text h2 { 
+        font-size: 56px; 
+    }
+    .adventure_img img { 
+        bottom: -132px; 
+        width: 322px;
+    }
+ } 
+
  @media all and (max-width:1200px){
     .roadmap_single.roadmap_single1 { 
         left: 555px; 
@@ -12,18 +55,84 @@
     .roadmap_single {
         width: 328px; 
     }
+    .adventure_single { 
+        height: auto;
+    }
  }
+
  @media all and (max-width:991px){
     .mobile_hide{
         display: none;
+    }
+    .single_stage h4 { 
+        margin-bottom: 0px;
+    }
+    .share_img {
+        margin-top: 30px;
+    }
+    .share_img img { 
+        position: inherit; 
+    }
+    .share_img img {
+        width: 100%;
+    }
+    .copy_text {  
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .pattern_2 ,
+    .pattern_1 { 
+        width: 110px;
+    }
+    .roadmap_single ul li p { 
+        font-size: 13px; 
+        line-height: 20px;
+    }
+    .first_roadmap {
+        top: 25px;
+        left: 50px;
+    }
+    .second_roadmap {
+        top: 143px;
+        right: 11px;
+    }
+    .faq .faq-list a { 
+        font-size: 20px; 
+    }
+    .third_roadmap {
+        top: 258px;
+        left: 50px;
+    }
+    .last_roadmap {
+        top: 367px;
+        right: 11px;
+    }
+    #tokenomics > img { 
+        width: 250px;
+    }
+    .adevnture_left h2, .banner_text h2 { 
+        font-size: 40px; 
+    }
+    .adventure_img img { 
+        bottom: -70px;
+        left: 191px;
+        width: 219px;
+    }
+    .adventure_right {
+        margin-top: 100px;
     }
     .banner_banana img { 
         position: inherit;
         margin-top: 20px;
     }
+    .section_title.step_title h2 {
+        font-size: 45px;
+    }
+    
     .menu_btn {
-        width: 120px;
-        margin: 0 auto;
+        width: 221px;
+        margin: 24px auto 0 auto;
         text-align: center;
     }
     .desktop_hide{
@@ -54,9 +163,10 @@
     .menu ul { 
         flex-direction: column; 
         gap: 10px;
-    } 
-    .btn_1 { 
-        margin: 30px auto 0 auto !important;
+    }  
+    .bammer_btnn { 
+        justify-content: center;
+        margin: 30px 0;
     }
     .about_area .row { 
         flex-direction: column-reverse;
@@ -69,8 +179,12 @@
         text-align: center;
         margin-bottom: 25px;
     }
-    .banner_text h2 { 
-        font-size: 45px; 
+    .banner_text h2 {
+        font-size: 45px;
+        max-width: 100%;
+    }
+    .feather_logo { 
+        flex: 0 0 25%; 
     }
     .section_title h2 { 
         font-size: 45px; 
@@ -137,6 +251,62 @@
     .section_padding {
         padding: 50px 0;
     } 
+    .adevnture_left h2, .banner_text h2 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+    .roadmapd img { 
+        display: none;
+    }
+    .step_single h3 { 
+        font-size: 20px; 
+    }
+    .logo a span { 
+        font-size: 20px; 
+    }
+    .roadmap_single { 
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        bottom: inherit;
+    }
+    .step_single p { 
+        margin-top: 4px;
+    }
+    .roadmapd {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .section_title.step_title p { 
+        font-size: 14px; 
+        line-height: 23px; 
+    }
+    .roadmap_single h4 { 
+        font-size: 20px; 
+    }
+    #roadmap > img { 
+        display: none;
+    }
+    .roadmap_single {
+        flex: 0 0 48%;
+        border: 1px solid #383838;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .share_text h2 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .section_title.step_title h2 {
+        font-size: 30px;
+    }
+    .step_single { 
+        height: auto;
+        margin-bottom: 15px;
+    }
     .about_img video { 
         margin-bottom: 15px;
     }
@@ -174,6 +344,19 @@
     .monkey_card{
         width: 100% ;
     }
+    .adventure_single h4 { 
+        font-size: 18px; 
+    }
+    .tokenomics_area { 
+        padding: 35px 0 200px 0; 
+    }
+    .step_area {
+        padding: 40px 0; 
+    }
+    .adventure_area {
+        background: rgba(124, 199, 220, 0.10);
+        padding: 40px 0 30px 0;
+    }
     .percent { 
         left: 35%; 
     }
@@ -196,7 +379,28 @@
         padding: 8px 5px; 
     }
     .banner_text h2 {
-        font-size: 34px;
+        font-size: 30px;
+        line-height: 41px;
+    }
+    .btn_2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .section_title.step_title h4 { 
+        font-size: 14px; 
+    }
+    .faq .faq-list p { 
+        font-size: 14px; 
+        line-height: 24px; 
+    }
+    .faq .faq-list a {
+        font-size: 18px;
+    }
+    .share_box {
+        padding: 38px 28px;
+    }
+    .footer h3 { 
+        font-size: 29px; 
     }
     p { 
         font-size: 14px; 
@@ -277,17 +481,16 @@
 
 
 @media all and (max-width:450px){
-    .roadmap_single.roadmap_single1 {
-        left: 267px;
-    }
-    .roadmap_single.roadmap_single2 {
-        right: 257px;
-    }
-    .roadmap_single.roadmap_single3 {
-        left: 267px;
-    }
     .roadmap_single {
-        width: 122px;
+        flex: 0 0 100%; 
+    }
+    .adventure_img img {
+        bottom: -86px;
+        left: 139px;
+        width: 219px;
+    }
+    .percent { 
+        width: 117px;
     }
 }
 

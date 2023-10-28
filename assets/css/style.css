@@ -29,6 +29,7 @@ time, mark, audio, span, video {
 }
 body{
   font-family: 'Inter', sans-serif;
+  background: #000;
 }
 table {
    border-collapse: collapse;
@@ -83,8 +84,8 @@ a:hover{
 }
 
 .section_title h2 {
-	color: #FFF;
-	font-family: 'Okula Hayir Soft';
+	color: #FFF; 
+	font-family: 'Lilita One', cursive;
 	font-size: 75px;
 	font-style: normal;
 	font-weight: 400;
@@ -95,6 +96,17 @@ a:hover{
 .section_title { 
 	margin-bottom: 50px;
 	text-align: center;
+}
+.section_title p {
+	color: var(--BLUE, #7CC7DC);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
 }
 p {
 	color: #FFF;
@@ -115,14 +127,14 @@ p {
 /********** Start Hedaer Area CSS  *************/
 
 .header_area_main {
-	background: var(--main, #8B04FB);
+	background: var(--main, #1d3240);
 	padding: 35px 0;
 	border-bottom: 1px solid #aeaeae;
 }
 
 .logo a span {
 	color: #FFF;
-	font-family: 'Okula Hayir Soft';
+	font-family: 'Lilita One', cursive; 
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
@@ -160,7 +172,7 @@ p {
 .menu ul li a.active, 
 .menu ul li a:hover { 
 	font-weight: 700; 
-	color: var(--yellow, #FAE700);
+	color: var(--yellow, #fff);
 }
 .menu ul li a:focus { 
 	font-weight: 700; 
@@ -194,18 +206,47 @@ p {
 /********** Start Banner Area CSS  *************/ 
 
 .banner_area {
-	background: var(--main, #8B04FB);
+	background: var(--main, #1d3240);
 	padding: 50px 0;
 }
 
-.banner_text h2 {
-	color: #FFF;
-	font-family: 'Okula Hayir Soft';
-	font-size: 70px;
+.adevnture_left h2,
+.banner_text h2 { 
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 64px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 120.7%;
+	line-height: 75px;
 	text-transform: uppercase;
+	max-width: 636px;
+	width: 100%;
+}
+
+.btn_2 {
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.64px;
+	text-transform: uppercase;
+	padding: 19px 32px; 
+	display: inline-block;
+}
+
+.btn_2:hover{
+	color: var(--Surface, #FFF);
+}
+
+
+.bammer_btnn {
+	display: flex;
+	gap: 20px;
+	align-items: center;
 }
 
 .banner_text p { 
@@ -219,37 +260,40 @@ p {
 .banner_banana img {
 	width: 130px;
 	position: absolute;
-	bottom: 0;
+	bottom: -135px;
 	right: 0;
-	left: 0;
+	/* left: 0; */
 	margin: 0 auto;
+	width: 206px;
 }
 
-.btn_1 {
-	border-radius: 5px;
-	background: var(--yellow, #FAE700);
-	border: none;
-	padding: 20px 24px;
-	color: var(--black, #1C1C1C);
-	font-family: Manrope;
-	font-size: 18px;
+.btn_1 { 
+
+	color: var(--Surface, #FFF);
+	font-family: 'Lilita One', cursive; 
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 800;
-	line-height: 28px;
-	transition: 0.3s;
+	font-weight: 400;
+	padding: 20px 24px;
+	line-height: 24px; /* 150% */
+	letter-spacing: 0.64px;
+	text-transform: uppercase;  
 	display: inline-block;
+	transition: 0.3s;
+	border-radius: 5px;
+	background: var(--yellow, #7CC7DC);
 }
 
 .btn_1:hover{
- 	opacity: 0.83;
-	 color: var(--black, #1C1C1C);
+ 	opacity: 0.83; 
+	 color: var(--Surface, #FFF);
 }
 
 /********** End Banner Area CSS  *************/ 
 
 /********** Start Feature Area CSS  *************/ 
 .featear_area { 
-	background: #140529;
+	background: #040C18;
 }
 
 .feather_logo {
@@ -258,7 +302,200 @@ p {
 .feather_logo img {
 	width: 100%;
 }
+.featuress {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+} 
+
+.feather_logo {
+	text-align: center;
+	flex: 0 0 15%;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
 /********** End Feature Area CSS  *************/ 
+
+
+/********** Start Adventure Area CSS  *************/ 
+
+.adventure_area {
+	background: rgba(124, 199, 220, 0.10);
+	padding: 70px 0 80px 0; 
+}
+
+.adevnture_left {
+	position: relative;
+}
+
+.adevnture_left h4 {
+	color: var(--BLUE, #7CC7DC);
+	font-family: Manrope;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.adevnture_left p {
+	padding: 16px 0 25px 0;
+}
+
+.adventure_single {
+	border-radius: 5px;
+	background: rgba(124, 199, 220, 0.10);
+	padding: 20px;
+	position: relative;
+	border: 2px solid transparent;
+	transition: 0.3s;
+	margin-bottom: 24px;
+	height: 172px;
+}
+
+.adventure_single h4 {
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.adventure_single p {
+	color: var(--Secondary-2, #B9B9BF);
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.adventure_single:hover  {
+	border-radius: 5px;
+	border: 2px solid var(--BLUE, #7CC7DC);
+	background: rgba(129, 175, 221, 0.10);
+	box-shadow: 0px 0px 32px 0px rgba(124, 199, 220, 0.48);
+}
+
+.up_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+.up_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.3;
+}
+
+.down_left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+.down_right {
+	position: absolute;
+	bottom: 0;
+	right: 0;  
+	opacity: 0.3;
+}
+
+.adventure_img img {
+	position: absolute;
+	bottom: -185px;
+	left: 191px;
+	width: 342px;
+}
+
+.section_title.step_title h4 {
+	color: #FFF;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.section_title.step_title h2{
+	font-size: 55px;
+}
+
+.section_title.step_title p {
+	color: #ECECEC;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	margin-top: 16px;
+	max-width: 1026px;
+	width: 100%; 
+	margin: 16px auto 0 auto;
+}
+/* 
+.steps {
+	margin-top: 100px;
+} */
+
+.step_single {
+	border-radius: 10px;
+	border: 2px solid var(--BLUE, #7CC7DC);
+	background: #FFF;
+	box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.20);
+	padding: 34px 20px;
+	height: 100%;
+}
+
+.step_single h3 {
+	color: #7CC7DC;
+	font-family: Lilita One;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.step_single p {
+	color: #7E7E7E;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin-top: 16px;
+}
+
+
+/********** End Adventure Area CSS  *************/ 
+
+/********** Start Step Area CSS  *************/ 
+.step_area {
+	padding: 80px 0;
+	background: #7CC7DC;
+}
+
+
+
+
+/********** End Step Area CSS  *************/ 
+
+
 
 /********** Start About Area CSS  *************/ 
 .about_area { 
@@ -362,79 +599,82 @@ p {
 
 /********** Start Roadmap Area CSS  *************/ 
 .roadmap_area { 
-	background: #0F081C;
-}
-
-.roadmap {
-	text-align: center;
+	background: #040C18;
 	position: relative;
 }
 
-.roadmap_single { 
-	width: 430px;
-	text-align: left;
+#roadmap > img {
+	position: absolute; 
+	bottom: -63px;
+	left: 0;
 }
 
-.roadmap_text h3,
-.roadmap_single h3 {
-	color: var(--main, #8B04FB);
-	font-family: Okula Hayir Soft;
-	font-size: 32px;
+.roadmapd img {
+	width: 100%;
+}
+
+.roadmapd{
+	position: relative;
+}
+
+.roadmap_single h4{
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px;
+	line-height: 44px;
+	text-transform: capitalize;
 }
 
-.roadmap_text p,
-.roadmap_single p {
-	color: #FFF;
+.roadmap_single ul li p {
+	color: var(--Secondary-2, #B9B9BF);
 	font-family: Manrope;
-	font-size: 18px;
+	font-size: 17px;
 	font-style: normal;
-	font-weight: 500;
-	line-height: 25px;
-	margin-top: 9px;
+	font-weight: 400;
+	line-height: 28px;
 }
 
-.roadmap_single.roadmap_single1 {
+.roadmap_single ul {
+	list-style: disc;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+.first_roadmap {
 	position: absolute;
-	top: 13px;
-	right: 0;
-	left: 630px;
-	margin: 0 auto;
+	top: 68px;
+	left: 85px;
 }
 
-.roadmap_single.roadmap_single2 {
+.second_roadmap {
 	position: absolute;
-	top: 187px;
-	right: 630px;
-	left: 0;
-	margin: 0 auto;
+	top: 300px;
+	right: 300px;
 }
 
-.roadmap_single.roadmap_single3 {
+.third_roadmap {
 	position: absolute;
-	top: 354px;
-	right: 0;
-	left: 630px;
-	margin: 0 auto;
+	top: 514px;
+	left: 78px;
 }
 
-.roadmap_text {
-	margin-top: 21px;
+.last_roadmap {
+	position: absolute;
+	top: 723px;
+	right: 300px;
 }
 
-.roadmap_yellow{
-	color: #FAE700 !important;
-}
 
 /********** End Roadmap Area CSS  *************/ 
 
 /********** Start Tokenomics Area CSS  *************/ 
 
 .tokenomics_area {
-	background: #0F081C;
-	padding-bottom: 120px;
+	background: #101F2C; 
+	padding: 120px 0 200px 0;
+	position: relative;
 }
 
 .tokenomics {
@@ -448,356 +688,320 @@ p {
 	text-align: center;
 } 
 
-/********** End Tokenomics Area CSS  *************/ 
-
-/********** End Stage Area CSS  *************/ 
-.stage_area {
-	background: #8B06FB; 
+.tokenomics_img img {
+	width: 100%; 
 }
 
-.single-stage {
-	border-radius: 10px;
-	background: linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
-	backdrop-filter: blur(125.5px);
-	padding: 60px 25px 44px 25px;
-	text-align: center;
-	position: relative;
-	margin-bottom: 25px;
-	z-index: 9;
+#tokenomics > img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
-.single-stage h4 {
-	color: #FFF;
-	text-align: center;
-	font-family: Okula Hayir Soft;
-	font-size: 32px;
+/********** End Tokenomics Area CSS  *************/  
+
+/********** Start Stages Area CSS  *************/  
+.stages_area {
+	background: #7CC7DC;
+}
+
+.single_stage {
+	border-radius: 18px;
+	background: #FFF;
+	padding: 24px 17px;
+	height: 100%;
+}
+
+.single_stage h4 {
+	color: #7CC7DC;
+	font-family: Lilita One;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px;
-	padding-bottom: 25px;
-	margin-bottom: 25px;
-	border-bottom: 1px solid #fff;
+	text-transform: uppercase;
+	margin-bottom: 11px;
 }
 
-.single-stage ul li p {
-	color: #FFF;
-	text-align: center;
-	font-family: 'Manrope', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 25px;
-}
-
-.single-stage ul li {
-	margin-bottom: 10px;
-}
-
-.stage_btn {
-	width: 313px;
-	height: 44px;
-	border-radius: 200px;
-	background: var(--yellow, #FAE700);
-	color: var(--black, #1C1C1C);
-	text-align: center;
-	font-family: Okula Hayir Soft;
+.single_stage ul li p {
+	color: #0E1A28;
+	font-family: Manrope;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px;
-	border: none;
-	transition: 0.3s;
-	position: absolute;
-	top: -20px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
+	line-height: 36px;
+	text-transform: capitalize;
 }
 
-.stage_btn:hover{
-	opacity: 0.83;
-}
 
-.stage_box{
-	position: relative;
-}
 
-.dot1 {
-	position: absolute;
-	top: 189px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	text-align: center; 
-	z-index: 8;
-}
-.dot2 {
-	position: absolute;
-	top: 45%;
-	right: 307px;
-}
-
-.dot3 {
-	position: absolute;
-	bottom: 148px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	text-align: center;
-	z-index: 8;
-}
-
-/********** End Stage Area CSS  *************/ 
+/********** End Stages Area CSS  *************/  
 
 /********** Start Question Area CSS  *************/
 .question_area{ 
 	background: #06040F;
 } 
+ 
+.accordion-item{
+	position: relative;
+}
 
 
-/* test  */
-
- #accordion-container {
-	list-style-type: none;
+.faq .faq-list ul {
 	padding: 0;
-	width: 90%;
-	margin: 30px auto;
-	display: block;
+	list-style: none;
   }
-  #accordion-item {
-	border-radius: 10px;
-	background: var(--fill, linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%));
-	/* vv */
-	backdrop-filter: blur(125.5px);  
-}
-  #accordion-container .opened { 
-	background: var(--main, #8B04FB); 
-}
-#accordion-container .accordion-item {
-	margin-bottom: 10px;
-	border-radius: 10px;
-	background: var(--fill, linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%));
-	backdrop-filter: blur(125.5px);
-}
-#accordion-container .opened .accordion-icon {
-	background: transparent;
-}
-   #accordion-container .accordion-item {
-	display: flex;
-	flex-direction: column;
+  
+  .faq .faq-list li+li {
+	margin-top: 15px;
   }
-   #accordion-container .accordion-item .accordion-head {
-	display: flex;
-  }
-   #accordion-container .accordion-item .accordion-head .accordion-icon {
-	border-radius: 50%;
-	width: 38px;
-	height: 34px;
-	margin-left: 10px;
+  
+  .faq .faq-list li {
+	padding: 20px;
+	border-radius: 4px;
 	position: relative;
-	align-self: center;
-	display: flex;
-  }
-   #accordion-container .accordion-item .accordion-head .accordion-icon span {
+	border-radius: 10px;
+	background: rgba(124, 199, 220, 0.10);
+	backdrop-filter: blur(10px);
+	position: relative;
+}
+  
+.faq .faq-list a {
 	display: block;
-	background-color: #fff;
-	width: 15px;
-	height: 2px;
-	border-radius: 5px;
-	position: absolute;
-	top: 50%;
-	left: calc(48% - 15px / 2);
-	transition: transform 0.2s;
-  }
-   #accordion-container .accordion-item .accordion-head .accordion-icon span:nth-of-type(2) {
-	transform: rotate(-90deg);
-  }
-   #accordion-container .accordion-item .accordion-head .accordion-icon span:nth-of-type(2).open-icon {
-	transform: rotate(-180deg);
-  }
-   #accordion-container .accordion-item .accordion-head button {
-	border: none;
-	background: none;
-	font-size: 0.98rem;
-	font-weight: 600; 
-	width: 100%;
-	padding: 20px 0 20px 15px;
-	text-align: left;
-  }
-   #accordion-container .accordion-item .accordion-head + div {
-	padding: 62px;
-	padding-top: 0;
-	font-family: Ariel, sans-serif;
-	letter-spacing: 0.02rem;
-  }
-   #accordion-container .accordion-item .accordion-head + div #blog-link {
-	background: #6b62ff;
-	border: none;
-	padding: 10px 30px;
-	margin: 15px 0;
-	font-weight: 600;
-	letter-spacing: 0.08rem;
-	border-radius: 32px;
-  }
-   #accordion-container .accordion-item .accordion-head + div #blog-link:hover {
+	position: relative; 
+	outline: none;
 	cursor: pointer;
-  }
-   #accordion-container .accordion-item .accordion-head + div #blog-link a {
-	color: white;
 	text-decoration: none;
-  }
-   #accordion-container .accordion-item .accordion-head:hover * {
-	cursor: pointer;
-  }
-
-  .accordion-title {
-	color: #FFF;
-	font-family: 'Okula Hayir Soft';
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 130%;
-	opacity: 0.8799999952316284;
-}
-
-.accordion-item p {
-	color: #FFF;	
-	font-family: 'Manrope', sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-}
-
-/********** End Question Area CSS  *************/ 
-
-/********** Start Choose Area CSS  *************/ 
-.choose_area{
-	padding: 0 0 120px 0;
-	background: #06040F;
-} 
-
-.why_choose_single {
-	position: relative;
-	border-radius: 10px;
-	background: linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
-	backdrop-filter: blur(125.5px);
-	padding: 85px 30px 43px 30px;
-}
-
-.why_choose_single ul li p {
-	color: #FFF;
-	font-family: 'Okula Hayir Soft';
-	font-size: 20px;
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px;
-	opacity: 1;
+	text-transform: capitalize; 
 }
+  
+  .faq .faq-list .icon-help {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	left: 20px;
+	color: #e82c88;
+  }
+  
+  .faq .faq-list .icon-show,
+  .faq .faq-list .icon-close {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .faq .faq-list p {
+	margin-bottom: 0;
+	padding: 16px 0 16px 0;
+	color: var(--Secondary-2, #B9B9BF);
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	margin-top: 20px;
+	border-top: 1px solid rgba(124, 199, 220, 0.48) !important;
+}
+  
+  .faq .faq-list .icon-show {
+	display: none;
+  }
+  
+  .faq .faq-list a.collapsed {
+	color: var(--Surface, #FFF);
+	transition: 0.3s;
+  }
+   
+  .faq .faq-list a.collapsed .icon-show {
+	display: inline-block;
+	color: #7CC7DC; 
+}
+.faq .faq-list .icon-close{ 
+	color: #7CC7DC; 
+}
+  
+  .faq .faq-list a.collapsed .icon-close {
+	display: none; 
+  }
+   
 
-.why_choose_single ul li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-bottom: 5px;
-	margin-bottom: 5px;
-	border-bottom: 1px solid #eee;
-}
-.why_choose_single ul li:last-child{
-	border-bottom: 1px solid transparent;
-
-}
-/********** End Choose Area CSS  *************/ 
+/********** End Question Area CSS  *************/  
 
 /********** Start Share Area CSS  *************/ 
-.share_area{  
-	padding: 0 0 120px 0;
+.share_area {
+	padding: 100px 0 120px 0;
 	background: #06040F;
 }
 .share_box {
-	background: #8904F8;
+	background: #7CC7DC;
 	border-radius: 10px;
-	padding: 26px 60px;
+	padding: 116px 60px;
+	position: relative;
 }
-.share_text h2 {
-	color: #FFF;
-	font-family: 'Okula Hayir Soft';
-	font-size: 64px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 120.7%;
-	text-transform: uppercase;
+.share_text h2 { 
 	width: 90%;
 	margin-bottom: 15px;
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 45px;
+	text-transform: uppercase;
 }
 .share_img img {
 	width: 100%;
 }
+.share_text a {
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #FFF;
+	color: var(--BLUE, #7CC7DC);
+	background: #fff;
+}
+
+.share_text a:hover{ 
+	color: var(--BLUE, #7CC7DC);
+}
+
+
+.share_img img {
+	width: 560px;
+	position: absolute;
+	top: -130px;
+	right: 0;
+}
+
 /********** End Share Area CSS  *************/ 
 
 /********** Start Footer Area CSS  *************/ 
-.footer_area{
-	background: #8904F7;
-	padding: 40px 0;
+.footer_area {
+	background: rgba(124, 199, 220, 0.10);
+	padding: 80px 0;
+	position: relative;
 }
 
-.header_social a,
-.footer_menu a,
-.footer_left p {
+.copy_right_area{
+	border-top: 1px solid #727272;
+	background: #1B303E; 
+	padding: 20px 0;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer h3 {
+	color: var(--Surface, #FFF);
+	font-family: Lilita One;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 44px;
+	text-transform: uppercase;
+}
+
+.footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin: 32px 0;
+}
+
+.footer ul li a img {
+	width: 48px;
+}
+
+.mail {
 	color: #FFF;
-	font-family: 'Manrope', sans-serif;
+	text-align: center;
+	font-family: Manrope;
 	font-size: 16px;
 	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	margin-bottom: 35px;
-}
-.footer_menu a{
 	font-weight: 700;
-	text-decoration: underline;
-	transition: 0.3s;
+	line-height: 20px;
+	margin-bottom: 15px;
+	display: inline-block;
 }
 
-.footer_menu a:hover{
-	opacity: 0.83;
-}
 
-.footer_menu {
-	display: flex;
-	gap: 30px;
-}
-
-.footer_short {
-	color: #FFF;
-	font-family: 'Manrope', sans-serif;
-	font-size: 12px;
+.footer p {
+	color: #B9B9BF;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 14px;
 	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
+	font-weight: 400;
+	line-height: 20px;
+	max-width: 781.064px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-.header_social a{
-	margin-top: 10px;
+.copy_text p {
+	color: var(--Secondary-2, #B9B9BF);
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	text-transform: capitalize;
 }
-/********** End Footer Area CSS  *************/ 
 
-
-.mobile_hide{
-	display: block;
+.copy_text ul li a {
+	color: var(--Secondary-2, #B9B9BF);
+	text-align: right;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	text-transform: capitalize;
 }
+
+.copy_text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copy_text ul {
+	display: flex;
+	gap: 35px;
+}
+
+.pattern_1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 235px;
+}
+
+.pattern_2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 235px;
+}
+
 .desktop_hide{
 	display: none;
 }
 
-.bars_menu i{
-	font-size: 28px;
+/* mobile menu css  */
+
+.bars_menu i {
 	color: #fff;
+	font-size: 30px;
 }
-
-
-
-
-
 
 
 /* 
@@ -828,11 +1032,12 @@ p {
 
 .monkey_card {
 	width: 528px;
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.63);
-	background: var(--main, #8B04FB);
+	border-radius: 20px; 
 	padding: 45px 27px 32px 27px;
-	margin: 20px auto;
+	margin: 20px auto; 
+	border: 1px solid var(--STROKE, #FFF);
+	background: var(--FILL, linear-gradient(107deg, rgba(255, 255, 255, 0.15) 0.76%, rgba(255, 255, 255, 0.00) 100%));
+	backdrop-filter: blur(125.5px);
 }
 
 #countdown ul {
@@ -882,31 +1087,34 @@ p {
  
 
 .bar {
-	position:relative;
-  float:left; 
-  height:100%; 
-	background: #FAE700;
+	position: relative;
+	float: left;
+	height: 100%;
+	background: #7CC7DC;
 }
-
 .percent {
-	position:absolute;
-  top:50%;
-  left:50%;
-  -webkit-transform:translate(-50%,-50%);
-      -ms-transform:translate(-50%,-50%);
-          transform:translate(-50%,-50%);
-  margin:0; 
-	color: #8B04FB;
-	font-size: 12px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
 	font-weight: 600;
 	line-height: 20px;
+}
+
+.img_monkey img {
+	width: 37px;
 }
 
 .monkey_progress .progress {
 	width: 90%;
 	margin: 10px auto;
-	border-radius: 20px; 
-	background: #B45CFC;
+	border-radius: 20px;
+	background: #738089;
 }
  
 .monekey_info p {
@@ -1004,8 +1212,8 @@ p {
 }
 
 .monekey_button .active {
-  color: #222223;
-  border: 1.5px solid #222223; 
+	color: #222223;
+	border: 1.5px solid #7CC7DC;
 }
 
 .from_input {
@@ -1067,7 +1275,7 @@ p {
 }
 
 .form_submit_btn button {
-	color: var(--main, #8B04FB);
+	color: var(--main, #fff);
 	text-align: center;
 	font-size: 16px;
 	font-family: Inter;
@@ -1076,11 +1284,11 @@ p {
 	height: 66px;
 	width: 100%;
 	border-radius: 7px;
-	background: #FFF;
+	background: #7CC7DC;
 	border: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .form_submit_btn button:hover{
@@ -1115,6 +1323,10 @@ p {
 .ETH{
   display: block;
 }
+
+
+
+/* font-family: 'Lilita One', cursive; */
 
 
 
