@@ -1,12 +1,6 @@
- 
-@font-face {
-    font-family: 'Okula Hayir Soft';
-    src: url('../fonts/OkulaHayirSoft.woff2') format('woff2'),
-        url('../fonts/OkulaHayirSoft.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
 /* Default CSS */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,8 +22,7 @@ time, mark, audio, span, video {
    background: transparent;
 }
 body{
-  font-family: 'Inter', sans-serif;
-  background: #000;
+	font-family: 'Plus Jakarta Sans', sans-serif; 
 }
 table {
    border-collapse: collapse;
@@ -84,33 +77,31 @@ a:hover{
 }
 
 .section_title h2 {
-	color: #FFF; 
-	font-family: 'Lilita One', cursive;
-	font-size: 75px;
+	color: #FFF;
+	text-align: center;
+	font-size: 48px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 120.7%;
-	text-transform: uppercase; 
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -1.44px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 
 .section_title { 
 	margin-bottom: 50px;
 	text-align: center;
 }
-.section_title p {
-	color: var(--BLUE, #7CC7DC);
-	text-align: center;
-	font-family: Manrope;
-	font-size: 20px;
+.section_title p { 
+	color: #878C91;
+	text-align: center; 
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 32px;
-	letter-spacing: 0.8px;
-	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 180%;
 }
 p {
-	color: #FFF;
-	font-family: 'Manrope', sans-serif;
+	color: #878C91; 
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
@@ -123,13 +114,27 @@ p {
 	padding: 100px 0;
 }
 
+.desktop_hide{
+	display: none;
+} 
+
+.bars_menu i {
+	color: #fff;
+	font-size: 30px;
+} 
+
+.container	{
+	width: 100%;
+	max-width: 1268px;
+	margin: 0 auto;
+}
+
 
 /********** Start Hedaer Area CSS  *************/
 
 .header_area_main {
-	background: var(--main, #1d3240);
-	padding: 35px 0;
-	border-bottom: 1px solid #aeaeae;
+	background: #1A1B24;
+	padding: 35px 0; 
 }
 
 .logo a span {
@@ -161,7 +166,7 @@ p {
 
 .menu ul li a {
 	color: #FFF;
-	font-family: 'Manrope', sans-serif;
+	 
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -206,7 +211,7 @@ p {
 /********** Start Banner Area CSS  *************/ 
 
 .banner_area {
-	background: var(--main, #1d3240);
+	background: #1A1B24;
 	padding: 50px 0;
 }
 
@@ -225,21 +230,23 @@ p {
 
 .btn_2 {
 	border-radius: 5px;
-	border: 1px solid #FFF;
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
+	border: 1px solid transparent;
+	color: var(--Surface, #FFF); 
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px;
 	letter-spacing: 0.64px;
 	text-transform: uppercase;
-	padding: 19px 32px; 
+	padding: 16px 32px;
 	display: inline-block;
+	border-radius: 70px;
+	transition: 0.3s;
 }
 
 .btn_2:hover{
-	color: var(--Surface, #FFF);
+	color: var(--Surface, #FFF); 
+	border: 1px solid #FFF;
 }
 
 
@@ -260,754 +267,889 @@ p {
 .banner_banana img {
 	width: 130px;
 	position: absolute;
-	bottom: -135px;
-	right: 0;
+	bottom: 191px;
+	right: 30px;
 	/* left: 0; */
 	margin: 0 auto;
-	width: 206px;
+	width: 94px;
 }
 
-.btn_1 { 
-
-	color: var(--Surface, #FFF);
-	font-family: 'Lilita One', cursive; 
+.btn_1 {
+	border-radius: 70px;
+	background: linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%);
+	padding: 16px 32px;
+	color: #FFF;  
 	font-size: 16px;
 	font-style: normal;
-	font-weight: 400;
-	padding: 20px 24px;
-	line-height: 24px; /* 150% */
-	letter-spacing: 0.64px;
-	text-transform: uppercase;  
-	display: inline-block;
+	font-weight: 700;
+	line-height: 140%;
+	letter-spacing: -0.32px;
 	transition: 0.3s;
-	border-radius: 5px;
-	background: var(--yellow, #7CC7DC);
 }
 
 .btn_1:hover{
- 	opacity: 0.83; 
-	 color: var(--Surface, #FFF);
+ 	opacity: 0.83;  
+	 color: #FFF;  
+}
+
+.banner_text h4 {  
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 35px;
+	text-transform: uppercase;
+	border-radius: 52px;
+	background: rgba(255, 174, 39, 0.16);
+	color: #F2B253;
+	padding: 0px 24px;
+	display: inline-block;
+	margin: 0;
 }
 
 /********** End Banner Area CSS  *************/ 
 
 /********** Start Feature Area CSS  *************/ 
-.featear_area { 
-	background: #040C18;
-}
 
-.feather_logo {
-	text-align: center;
-}
-.feather_logo img {
-	width: 100%;
-}
-.featuress {
-	display: flex;
-	gap: 25px;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-} 
-
-.feather_logo {
-	text-align: center;
-	flex: 0 0 15%;
-	flex-wrap: wrap;
-	margin-bottom: 30px;
-}
-/********** End Feature Area CSS  *************/ 
-
-
-/********** Start Adventure Area CSS  *************/ 
-
-.adventure_area {
-	background: rgba(124, 199, 220, 0.10);
-	padding: 70px 0 80px 0; 
-}
-
-.adevnture_left {
-	position: relative;
-}
-
-.adevnture_left h4 {
-	color: var(--BLUE, #7CC7DC);
-	font-family: Manrope;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 32px;
-	letter-spacing: 0.8px;
-	text-transform: uppercase;
-}
-
-.adevnture_left p {
-	padding: 16px 0 25px 0;
-}
-
-.adventure_single {
-	border-radius: 5px;
-	background: rgba(124, 199, 220, 0.10);
-	padding: 20px;
-	position: relative;
-	border: 2px solid transparent;
-	transition: 0.3s;
-	margin-bottom: 24px;
-	height: 172px;
-}
-
-.adventure_single h4 {
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	text-transform: uppercase;
-	margin-bottom: 16px;
-}
-
-.adventure_single p {
-	color: var(--Secondary-2, #B9B9BF);
-	font-family: Manrope;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
-}
-
-.adventure_single:hover  {
-	border-radius: 5px;
-	border: 2px solid var(--BLUE, #7CC7DC);
-	background: rgba(129, 175, 221, 0.10);
-	box-shadow: 0px 0px 32px 0px rgba(124, 199, 220, 0.48);
-}
-
-.up_left {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.3;
-}
-
-.up_right {
-	position: absolute;
-	top: 0;
-	right: 0;
-	opacity: 0.3;
-}
-
-.down_left {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	opacity: 0.3;
-}
-
-.down_right {
-	position: absolute;
-	bottom: 0;
-	right: 0;  
-	opacity: 0.3;
-}
-
-.adventure_img img {
-	position: absolute;
-	bottom: -185px;
-	left: 191px;
-	width: 342px;
-}
-
-.section_title.step_title h4 {
-	color: #FFF;
-	text-align: center;
-	font-family: Manrope;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 32px;
-	letter-spacing: 0.8px;
-	text-transform: uppercase;
-}
-
-.section_title.step_title h2{
-	font-size: 55px;
-}
-
-.section_title.step_title p {
-	color: #ECECEC;
-	text-align: center;
-	font-family: Manrope;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
-	margin-top: 16px;
-	max-width: 1026px;
-	width: 100%; 
-	margin: 16px auto 0 auto;
-}
-/* 
-.steps {
-	margin-top: 100px;
-} */
-
-.step_single {
-	border-radius: 10px;
-	border: 2px solid var(--BLUE, #7CC7DC);
-	background: #FFF;
-	box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.20);
-	padding: 34px 20px;
-	height: 100%;
-}
-
-.step_single h3 {
-	color: #7CC7DC;
-	font-family: Lilita One;
+.feature_title h3 {
+	color: #828282; 
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 160%;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
-.step_single p {
-	color: #7E7E7E;
-	font-family: Manrope;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
-	margin-top: 16px;
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 15px;
 }
 
-
-/********** End Adventure Area CSS  *************/ 
-
-/********** Start Step Area CSS  *************/ 
-.step_area {
-	padding: 80px 0;
-	background: #7CC7DC;
-}
-
-
-
-
-/********** End Step Area CSS  *************/ 
-
-
-
-/********** Start About Area CSS  *************/ 
-.about_area { 
-	background: var(--main, #8B04FB);
-}
-.about_left h3 {
-	color: #FFF;
-	font-family: Okula Hayir Soft;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 120.7%;
-	text-transform: uppercase;
-}
-.about_left p {
-	margin: 5px 0 30px 0;
-}
-.about_img video {
+.feature_item img {
 	width: 100%;
 }
-/********** End About Area CSS  *************/ 
 
-/********** Start Buy Area CSS  *************/ 
-.buy_area { 
-	background: #0E041E;
+.feature_item {
+	flex: 0 0 15%;
 }
 
-.buy_single {
-	border-radius: 10px;
-	background: linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
-	backdrop-filter: blur(125.5px);
-	padding: 50px 18px;
-	text-align: center;
-	height: 100%;
+.featear_area {
+	background: #fff;
 }
 
-.buy_single:nth-child(2) { 
-	background: linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);  
+
+/********** End Feature Area CSS  *************/  
+
+/********** Start Change Area CSS  *************/ 
+
+.chagne_row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.buy_single h3 {
-	color: #FFF;
-	font-family: Okula Hayir Soft;
+.change_left {
+	width: 30%;
+}
+
+.change_left img {
+	width: 100%;
+}
+
+.change_right {
+	width: 68%;
+}
+
+.change_right h3 {
+	color: #010205; 
 	font-size: 48px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	background: #8B04FB;
-	width: 70px;
-	height: 70px;
-	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -1.44px;
 }
 
-.buy_single h4 {
-	color: #FFF;
-	font-family: Okula Hayir Soft;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin: 24px 0 17px 0;
-}
-
-.buy_single p {
-	color: #FFF;
-	text-align: center;
+.btn_3 {
+	border-radius: 50px;
+	border: 1px solid var(--GRADIENT, #F2B253);
+	width: 176px;
+	color: #F2B253;
+	padding: 17px 16px;
+	display: inline-block;
 	font-family: Manrope;
 	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	letter-spacing: -0.32px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.btn_3:hover{
+	opacity: 0.83; 
+	color: #F2B253;
+}
+
+.change_right p {
+	margin: 30px 0 35px 0;
+}
+
+/********** End Change Area CSS  *************/ 
+
+/********** Start How To Buy Area CSS  *************/ 
+
+.roadmap_area,
+.how_to_buy_area {
+	position: relative;
+	background: #000 ;
+	z-index: 8;
+	margin: 0 15px;
+	border-radius: 30px;
+}
+
+.roadmap_area:after,
+.how_to_buy_area:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0; 
+	background: url(../images/how/bg.png) no-repeat scroll center center / cover; 
+}
+
+.roadmap_main,
+.how_to_main {
+	position: relative;
+	z-index: 9;
+}
+
+.how_to_single span {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%));
+	border-radius: 100%;
+	color: #FFF; 
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 24px auto;
+	align-items: center;
+}
+
+.how_to_single {
+	border-radius: 10px;
+	border: 2px solid #FFF;
+	background: #252733;
+	backdrop-filter: blur(125.5px);
+	text-align: center;
+	padding: 58px 18px;
+	flex: 0 0 32.5%;
+}
+
+.how_to_single h4 {
+	color: #FFF; 
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 24px 0;
+}
+
+.how_to_single p {
+	color: #FFF;
+	text-align: center; 
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 26px;
 }
 
-
-/********** End Buy Area CSS  *************/ 
-
-/********** Start Token Area CSS  *************/
-
-.token_area {
-	background: #8905F6;
-	padding: 100px 0 0 0;
-}
-
-.token_img img {
-	width: 100%;
-} 
-
-.token_area .section_title h2 img {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
+.how_to_row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 
-/********** End Token Area CSS  *************/ 
+/********** End How To Buy Area CSS  *************/ 
+/********** Start Map Area CSS  *************/
 
-/********** Start Roadmap Area CSS  *************/ 
-.roadmap_area { 
-	background: #040C18;
+.maps {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.maps_right{ 
+	flex: 0 0 39%;
+}
+.maps_left {
+	flex: 0 0 59%;
+}
+
+.maps_left h3 {
+	color: #010205; 
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -1.44px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.map_text h4 {
+	color: #010205; 
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 27px;
+}
+
+.map_text p {
+	color: #878C91; 
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22.4px;
+}
+
+.map_ul li {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin-bottom: 23px;
+}
+
+.map_ul li img {
+	margin-top: 6px;
+	width: 15px
+}
+
+/********** End Map Area CSS  *************/ 
+
+/********** Start Tokenomic CSS  *************/ 
+
+.tokenomic_area {
+	background: #F7F7F7;
+}
+
+.tekenomic {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.token_left img {
+	width: 100%;
+}
+
+.token_left {
+	flex: 0 0 36%;
+}
+
+.tokenomic_right {
+	flex: 0 0 56%;
+}
+
+.token_left p {
+	color: #838F9F;
+	text-align: center; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 19px;
+}
+
+.tokenomic_right h3 {
+	color: #010205; 
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -1.44px;
+}
+
+.tokenomic_right > p {
+	color: #878C91; 
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 180%;
+	margin: 30px 0 40px 0;
+}
+
+.token_ul li h4 {
+	color: #1E1E1E; 
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 60px;
+	letter-spacing: -1.92px;
+}
+
+.token_ul p {
+	color: #8896AB; 
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.token_ul p span{ 
+	font-weight: 700; 
+}
+
+.token_ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.token_ul li {
+	flex: 0 0 49%;
+	margin-bottom: 30px;
+}
+
+/********** End Tokenomic CSS  *************/ 
+
+/********** Start Stage CSS  *************/ 
+
+.question_area .section_title h2 ,
+.stage_area .section_title h2 {
+	color: #010205; 
+}
+
+.stage {
+	text-align: center;
 	position: relative;
 }
 
-#roadmap > img {
-	position: absolute; 
-	bottom: -63px;
-	left: 0;
+.stage_item {
+	border-radius: 10px;
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%));
+	padding: 30px 18px;
+	width: 450px;
+	text-align: left;
 }
 
-.roadmapd img {
-	width: 100%;
-}
-
-.roadmapd{
-	position: relative;
-}
-
-.roadmap_single h4{
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 24px;
+.stage_item p {
+	color: #FFF; 
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 44px;
-	text-transform: capitalize;
+	line-height: normal;
+	margin-top: 10px;
 }
 
-.roadmap_single ul li p {
-	color: var(--Secondary-2, #B9B9BF);
-	font-family: Manrope;
-	font-size: 17px;
+.stage_item h5 {
+	color: #FFF;
+	font-family: Plus Jakarta Sans;
+	font-size: 22px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
 }
 
-.roadmap_single ul {
-	list-style: disc;
-	margin-left: 25px;
-	margin-top: 5px;
-}
-
-.first_roadmap {
+.stage_item.stage_item_1 {
 	position: absolute;
-	top: 68px;
+	top: 54px;
 	left: 85px;
 }
 
-.second_roadmap {
+.stage_item.stage_item_2 {
 	position: absolute;
-	top: 300px;
-	right: 300px;
+	top: 190px;
+	right: 85px;
 }
 
-.third_roadmap {
+.stage_item.stage_item_3 {
 	position: absolute;
-	top: 514px;
-	left: 78px;
+	top: 333px;
+	left: 85px;
 }
 
-.last_roadmap {
+.stage_item.stage_item_4 {
 	position: absolute;
-	top: 723px;
-	right: 300px;
+	top: 465px;
+	right: 85px;
+}
+
+.stage_item.stage_item_5 {
+	position: absolute;
+	top: 603px;
+	left: 85px;
+}
+
+.stage_item.stage_item_6 {
+	position: absolute;
+	top: 739px;
+	right: 86px;
+}
+
+.stage_item.stage_item_7 {
+	position: absolute;
+	top: 876px;
+	left: 85px;
+}
+
+.stage_item.stage_item_8 {
+	position: absolute;
+	top: 1012px;
+	right: 85px;
+}
+
+.stage_item.stage_item_9 {
+	position: absolute;
+	top: 1152px;
+	left: 85px;
+}
+
+.stage_item.stage_item_10 {
+	position: absolute;
+	top: 1287px;
+	right: 85px;
 }
 
 
-/********** End Roadmap Area CSS  *************/ 
+.stage img {
+	width: 15%;
+}
 
-/********** Start Tokenomics Area CSS  *************/ 
+.stage {
+	margin-bottom: 40px;
+}
 
-.tokenomics_area {
-	background: #101F2C; 
-	padding: 120px 0 200px 0;
+/********** End Tokenomic CSS  *************/
+
+/********** Start Roadmap CSS  *************/
+
+.roadmap_area{
 	position: relative;
+	background: #000 ;
+	z-index: 8;
+	margin: 0 15px;
+	border-radius: 30px;
 }
 
-.tokenomics {
-	border-radius: 48px;
-	background: var(--fill, linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%));
-	backdrop-filter: blur(125.5px);
-	padding: 75px;
-}
-
-.tokenomics_img {
-	text-align: center;
-} 
-
-.tokenomics_img img {
-	width: 100%; 
-}
-
-#tokenomics > img {
+.roadmap_area:after{
+	content: "";
 	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-
-/********** End Tokenomics Area CSS  *************/  
-
-/********** Start Stages Area CSS  *************/  
-.stages_area {
-	background: #7CC7DC;
-}
-
-.single_stage {
-	border-radius: 18px;
-	background: #FFF;
-	padding: 24px 17px;
-	height: 100%;
-}
-
-.single_stage h4 {
-	color: #7CC7DC;
-	font-family: Lilita One;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	text-transform: uppercase;
-	margin-bottom: 11px;
-}
-
-.single_stage ul li p {
-	color: #0E1A28;
-	font-family: Manrope;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 36px;
-	text-transform: capitalize;
-}
-
-
-
-/********** End Stages Area CSS  *************/  
-
-/********** Start Question Area CSS  *************/
-.question_area{ 
-	background: #06040F;
-} 
- 
-.accordion-item{
-	position: relative;
-}
-
-
-.faq .faq-list ul {
-	padding: 0;
-	list-style: none;
-  }
-  
-  .faq .faq-list li+li {
-	margin-top: 15px;
-  }
-  
-  .faq .faq-list li {
-	padding: 20px;
-	border-radius: 4px;
-	position: relative;
-	border-radius: 10px;
-	background: rgba(124, 199, 220, 0.10);
-	backdrop-filter: blur(10px);
-	position: relative;
-}
-  
-.faq .faq-list a {
-	display: block;
-	position: relative; 
-	outline: none;
-	cursor: pointer;
-	text-decoration: none;
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 32px;
-	text-transform: capitalize; 
-}
-  
-  .faq .faq-list .icon-help {
-	font-size: 24px;
-	position: absolute;
-	right: 0;
-	left: 20px;
-	color: #e82c88;
-  }
-  
-  .faq .faq-list .icon-show,
-  .faq .faq-list .icon-close {
-	font-size: 24px;
-	position: absolute;
-	right: 0;
-	top: 0;
-  }
-  
-  .faq .faq-list p {
-	margin-bottom: 0;
-	padding: 16px 0 16px 0;
-	color: var(--Secondary-2, #B9B9BF);
-	font-family: Manrope;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
-	margin-top: 20px;
-	border-top: 1px solid rgba(124, 199, 220, 0.48) !important;
-}
-  
-  .faq .faq-list .icon-show {
-	display: none;
-  }
-  
-  .faq .faq-list a.collapsed {
-	color: var(--Surface, #FFF);
-	transition: 0.3s;
-  }
-   
-  .faq .faq-list a.collapsed .icon-show {
-	display: inline-block;
-	color: #7CC7DC; 
-}
-.faq .faq-list .icon-close{ 
-	color: #7CC7DC; 
-}
-  
-  .faq .faq-list a.collapsed .icon-close {
-	display: none; 
-  }
-   
-
-/********** End Question Area CSS  *************/  
-
-/********** Start Share Area CSS  *************/ 
-.share_area {
-	padding: 100px 0 120px 0;
-	background: #06040F;
-}
-.share_box {
-	background: #7CC7DC;
-	border-radius: 10px;
-	padding: 116px 60px;
-	position: relative;
-}
-.share_text h2 { 
-	width: 90%;
-	margin-bottom: 15px;
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 45px;
-	text-transform: uppercase;
-}
-.share_img img {
 	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0; 
+	background: url(../images/how/bg.png) no-repeat scroll center center / cover; 
 }
-.share_text a {
-	display: inline-block;
-	margin-top: 20px;
-	border: 1px solid #FFF;
-	color: var(--BLUE, #7CC7DC);
+
+.roadmap_main {
+	position: relative;
+	z-index: 9;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 80px;
+}
+
+.roadmap_single {
+	padding: 85px 27px;
+	border-radius: 10px;
+	border: 2px solid var(--STROKE, #FFF);
+	background: #252733;
+	backdrop-filter: blur(125.5px);
+	position: relative;
+	flex: 0 0 47%;
+	margin-bottom: 72px;
+}
+
+.roadmap_single h3 {
+	color: #FFF; 
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.roadmap_single ul li p {
+	color: #FFF; 
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.roadmap_single hr {
+	height: 1px;
 	background: #fff;
 }
 
-.share_text a:hover{ 
-	color: var(--BLUE, #7CC7DC);
+.roadmap_single ul li{
+	margin-bottom: 10px;
 }
 
-
-.share_img img {
-	width: 560px;
-	position: absolute;
-	top: -130px;
-	right: 0;
+.roadmap_single ul li span {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background: #fff;
+	border-radius: 100%;
+	margin-right: 9px;
 }
 
-/********** End Share Area CSS  *************/ 
-
-/********** Start Footer Area CSS  *************/ 
-.footer_area {
-	background: rgba(124, 199, 220, 0.10);
-	padding: 80px 0;
-	position: relative;
-}
-
-.copy_right_area{
-	border-top: 1px solid #727272;
-	background: #1B303E; 
-	padding: 20px 0;
-}
-
-.footer {
-	text-align: center;
-}
-
-.footer h3 {
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 36px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 44px;
-	text-transform: uppercase;
-}
-
-.footer ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-	margin: 32px 0;
-}
-
-.footer ul li a img {
-	width: 48px;
-}
-
-.mail {
+.roadmap_single a {
+	border-radius: 5px;
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%));
+	width: 313px;
+	height: 44px;
+	display: inline-block;
 	color: #FFF;
 	text-align: center;
-	font-family: Manrope;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Plus Jakarta Sans;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 20px;
-	margin-bottom: 15px;
-	display: inline-block;
+	line-height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -22px;
+	transition: 0.3s;
 }
 
-
-.footer p {
-	color: #B9B9BF;
-	text-align: center;
-	font-family: Manrope;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
-	max-width: 781.064px;
-	width: 100%;
+.dot_white_1 {
+	position: absolute;
+	top: 158px;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
+	text-align: center;
 }
 
-.copy_text p {
-	color: var(--Secondary-2, #B9B9BF);
-	font-family: Manrope;
-	font-size: 14px;
+.dot_white_2 {
+	position: absolute;
+	top: 384px;
+	right: 300px;
+}
+ 
+.dot_white_3 {
+	position: absolute;
+	bottom: 344px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/********** End Roadmap CSS  *************/ 
+
+/********** Start Question CSS  *************/ 
+
+
+#accordion-container {
+	list-style-type: none;
+	padding: 0; 
+	margin: 30px auto;
+	display: block;
+  }
+  #accordion-item {
+	border-radius: 10px;
+	background: var(--fill, linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%));
+	/* vv */
+	backdrop-filter: blur(125.5px);  
+}
+
+#accordion-container .accordion-item {
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: var(--fill, linear-gradient(134deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%));
+	backdrop-filter: blur(125.5px);
+}
+#accordion-container .opened .accordion-icon {
+	background: transparent;
+}
+   #accordion-container .accordion-item {
+	display: flex;
+	flex-direction: column;
+  }
+   #accordion-container .accordion-item .accordion-head {
+	display: flex;
+  }
+   #accordion-container .accordion-item .accordion-head .accordion-icon {
+	border-radius: 50%;
+	width: 38px;
+	height: 34px;
+	margin-left: 10px;
+	position: relative;
+	align-self: center;
+	display: flex;
+  }
+   #accordion-container .accordion-item .accordion-head .accordion-icon span {
+	display: block;
+	background-color: #fff;
+	width: 15px;
+	height: 2px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: calc(48% - 15px / 2);
+	transition: transform 0.2s;
+  }
+   #accordion-container .accordion-item .accordion-head .accordion-icon span:nth-of-type(2) {
+	transform: rotate(-90deg);
+  }
+   #accordion-container .accordion-item .accordion-head .accordion-icon span:nth-of-type(2).open-icon {
+	transform: rotate(-180deg);
+  }
+  #accordion-container .accordion-item .accordion-head button {
+	border: none;
+	background: none;
+	font-size: 0.98rem;
+	font-weight: 600;
+	width: 100%;
+	padding: 39px 0 39px 15px;
+	text-align: left;
+}
+   #accordion-container .accordion-item .accordion-head + div {
+	padding: 62px;
+	padding-top: 0;
+	font-family: Ariel, sans-serif;
+	letter-spacing: 0.02rem;
+  }
+   #accordion-container .accordion-item .accordion-head + div #blog-link {
+	background: #6b62ff;
+	border: none;
+	padding: 10px 30px;
+	margin: 15px 0;
+	font-weight: 600;
+	letter-spacing: 0.08rem;
+	border-radius: 32px;
+  }
+   #accordion-container .accordion-item .accordion-head + div #blog-link:hover {
+	cursor: pointer;
+  }
+   #accordion-container .accordion-item .accordion-head + div #blog-link a {
+	color: white;
+	text-decoration: none;
+  }
+   #accordion-container .accordion-item .accordion-head:hover * {
+	cursor: pointer;
+  }
+
+  .accordion-title {
+	color: #FFF; 
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 22px;
-	text-transform: capitalize;
+	line-height: 130%;
+	opacity: 0.8799999952316284;
+	font-size: 18px !important;
 }
 
-.copy_text ul li a {
-	color: var(--Secondary-2, #B9B9BF);
-	text-align: right;
-	font-family: Manrope;
-	font-size: 14px;
+.accordion-item p {
+	color: #FFF;	
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 22px;
-	text-transform: capitalize;
+	font-weight: 500;
+	line-height: normal;
 }
 
-.copy_text {
+#accordion-container .accordion-item { 
+	background: #252733;
+}
+
+.accordion-item.active {  
+	border-radius: 10px;
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)) !important;
+}
+
+#accordion-container .opened ,
+#accordion-container .opened{ 
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)) !important;
+}
+
+/********** End Question Area CSS  *************/ 
+/********** Start Join CSS  *************/
+
+.join_area {
+	position: relative; 
+	z-index: 8;
+	margin: 0 15px;
+	border-radius: 30px; 
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%));
+ 
+}
+
+.join_area:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0; 
+	background: url(../images/how/bg.png) no-repeat scroll center center / cover; 
+}
+
+.main_join {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 99;
 	align-items: center;
 }
 
-.copy_text ul {
+.join_left h3 {
+	color: #FFF; 
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -1.2px;
+}
+
+.join_left p {
+	color: #FFF; 
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 180%;
+	margin-top: 24px;
+}
+
+.join_right a {
+	border-radius: 70px;
+	background: #FFF;
+	padding: 16px 32px;
+	color: #010205; 
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	letter-spacing: -0.32px;
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.join_right a:hover{
+	opacity: 0.83; 
+}
+
+.join_left {
+	flex: 0 0 65%;
+}
+
+/********** End Join CSS  *************/ 
+
+/********** Start Footer CSS  *************/
+
+
+.footer_area {
+	background: #1A1B24;
+	padding-top: 255px;
+	position: relative;
+}
+
+.join_main_footer {
+	position: absolute;
+	width: 100%;
+	top: -171px;
+}
+
+.question_area {
+	padding-bottom: 255px;
+}
+
+.footer {
 	display: flex;
-	gap: 35px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 110px;
 }
 
-.pattern_1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 235px;
+.footer_logo {
+	flex: 0 0 47%;
 }
 
-.pattern_2 {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 235px;
+.footer_logo p {
+	color: #9B9B9C; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 20px;
 }
 
-.desktop_hide{
-	display: none;
+.footer_item h4 {
+	color: #FFF; 
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.18px;
+	margin-bottom: 40px;
 }
 
-/* mobile menu css  */
-
-.bars_menu i {
-	color: #fff;
-	font-size: 30px;
+.footer_item ul li a {
+	color: #9B9B9C; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.28px;
 }
+
+.social_footer {
+	display: flex;
+	gap: 12px;
+}
+
+.social_footer li a img:hover{
+	opacity: 0.83;
+}
+
+.footer_main hr {
+	background: #fff;
+	height: 1px;
+}
+
+.footer_copy p {
+	color: #FFF; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+
+
+
+/********** End Footer CSS  *************/ 
+
+ 
+
+
+
 
 
 /* 
 
-	font-family: 'Manrope', sans-serif;
-	font-family: 'Okula Hayir Soft';
+	font-family: 'Plus Jakarta Sans', sans-serif;
 
 
 */
@@ -1029,12 +1171,16 @@ p {
 
 
 /* card css  */
+.banner_card {
+	display: flex;
+	justify-content: flex-end;
+}
 
 .monkey_card {
 	width: 528px;
 	border-radius: 20px; 
 	padding: 45px 27px 32px 27px;
-	margin: 20px auto; 
+	/* margin: 20px auto;  */
 	border: 1px solid var(--STROKE, #FFF);
 	background: var(--FILL, linear-gradient(107deg, rgba(255, 255, 255, 0.15) 0.76%, rgba(255, 255, 255, 0.00) 100%));
 	backdrop-filter: blur(125.5px);
@@ -1284,7 +1430,7 @@ p {
 	height: 66px;
 	width: 100%;
 	border-radius: 7px;
-	background: #7CC7DC;
+	background: var(--MAIN, linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)); 
 	border: none;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -1325,8 +1471,5 @@ p {
 }
 
 
-
-/* font-family: 'Lilita One', cursive; */
-
-
+ 
 

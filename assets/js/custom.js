@@ -5,7 +5,7 @@ const main = () => {
     const day = hour * 24
         
     //INSERT EVENT DATE AND TIME HERE IN THIS FORMAT: 'June 1, 2023, 19:00:00'
-    const EVENTDATE = new Date('September 27, 2023, 19:00:00')
+    const EVENTDATE = new Date('November 10, 2023, 19:00:00')
    
     const countDown = new Date(EVENTDATE).getTime()
     const x = setInterval(() => {
@@ -88,5 +88,5 @@ $(document).ready(function(){
 
 $(document).on('click','.bars_menu',function(){
   $('.menu').slideToggle();
-});
+}); 
 
