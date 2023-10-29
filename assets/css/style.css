@@ -253,7 +253,7 @@ p {
 	line-height: 24px;
 	letter-spacing: 0.64px;
 	text-transform: uppercase;
-	padding: 16px 32px;
+	padding: 13px 35px;
 	display: inline-block;
 	border-radius: 70px;
 	transition: 0.3s;
@@ -292,7 +292,7 @@ p {
 .btn_1 {
 	border-radius: 70px;
 	background: linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%);
-	padding: 16px 32px;
+	padding: 13px 35px;
 	color: #FFF;  
 	font-size: 16px;
 	font-style: normal;
