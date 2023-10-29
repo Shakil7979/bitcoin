@@ -1280,6 +1280,10 @@ p {
 	width: 37px;
 }
 
+.fix_img img{
+	width: 50px;
+}
+
 .monkey_progress .progress {
 	width: 90%;
 	margin: 10px auto;
