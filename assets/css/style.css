@@ -21,7 +21,7 @@ time, mark, audio, span, video {
    font-size: 100%;
    background: transparent;
 }
-body{
+body{ 
 	font-family: 'Plus Jakarta Sans', sans-serif; 
 }
 table {
@@ -206,13 +206,28 @@ p {
 	display: none !important;
 }
 
+.header_social li a img {
+	width: 40px;
+}
+
+.header_social {
+	display: flex;
+	gap: 8px;
+}
+
+.header_btn { 
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
 /********** End Hedaer Area CSS  *************/ 
 
 /********** Start Banner Area CSS  *************/ 
 
 .banner_area {
 	background: #1A1B24;
-	padding: 50px 0;
+	padding: 62px 0 112px 0;
 }
 
 .adevnture_left h2,
@@ -491,8 +506,13 @@ p {
 .maps_right{ 
 	flex: 0 0 39%;
 }
+
 .maps_left {
 	flex: 0 0 59%;
+}
+
+.maps_right img {
+	width: 100%;
 }
 
 .maps_left h3 {
@@ -1052,6 +1072,10 @@ p {
 	flex: 0 0 65%;
 }
 
+.join_right a i {
+	margin-left: 30px;
+}
+
 /********** End Join CSS  *************/ 
 
 /********** Start Footer CSS  *************/
@@ -1466,7 +1490,7 @@ p {
   display: none;
 }
 
-.ETH{
+.USDT{
   display: block;
 }
 
