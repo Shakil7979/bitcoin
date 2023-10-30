@@ -92,13 +92,16 @@ a:hover{
 	margin-bottom: 50px;
 	text-align: center;
 }
-.section_title p { 
+.section_title p {
 	color: #878C91;
-	text-align: center; 
+	text-align: center;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 180%;
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
 }
 p {
 	color: #878C91; 
@@ -230,17 +233,13 @@ p {
 	padding: 62px 0 112px 0;
 }
 
-.adevnture_left h2,
-.banner_text h2 { 
-	color: var(--Surface, #FFF);
-	font-family: Lilita One;
-	font-size: 64px;
+.banner_text h2 {
+	color: #FFF; 
+	font-size: 62px;
 	font-style: normal;
-	font-weight: 400;
-	line-height: 75px;
-	text-transform: uppercase;
-	max-width: 636px;
-	width: 100%;
+	font-weight: 600;
+	line-height: 110%;
+	letter-spacing: -2.16px;
 }
 
 .btn_2 {
@@ -257,6 +256,7 @@ p {
 	display: inline-block;
 	border-radius: 70px;
 	transition: 0.3s;
+	text-decoration: underline;
 }
 
 .btn_2:hover{
@@ -282,8 +282,8 @@ p {
 .banner_banana img {
 	width: 130px;
 	position: absolute;
-	bottom: 191px;
-	right: 30px;
+	bottom: 173px;
+	right: 3px;
 	/* left: 0; */
 	margin: 0 auto;
 	width: 94px;
@@ -494,6 +494,16 @@ p {
 	flex-wrap: wrap;
 }
 
+.how_to_pp p {
+	color: #FFF;
+	text-align: center; 
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	margin-top: 37px;
+}
+
 
 /********** End How To Buy Area CSS  *************/ 
 /********** Start Map Area CSS  *************/
@@ -531,6 +541,7 @@ p {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
+	text-transform: uppercase;
 	line-height: 27px;
 }
 
@@ -1160,6 +1171,13 @@ p {
 	padding-bottom: 15px;
 }
 
+.footer_item ul li {
+	margin-bottom: 10px;
+}
+
+.footer_item ul li a:hover {
+	color: #Ffff;
+}
 
 
 
