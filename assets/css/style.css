@@ -366,6 +366,18 @@ p {
 	flex-wrap: wrap;
 }
 
+.change_area {
+	position: relative;
+}
+
+.shape_chagne img {
+	width: 200px;
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	z-index: -1;
+}
+
 .change_left {
 	width: 30%;
 }
