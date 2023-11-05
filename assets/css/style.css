@@ -1420,6 +1420,14 @@ p {
 	border: 1.5px solid #7CC7DC;
 }
 
+.monekey_button li button{
+	transition: 0.3s;
+}
+
+.monekey_button li button:hover {
+	opacity: 0.83;
+}
+
 .from_input {
 	width: 100%;
 	display: -webkit-box;
