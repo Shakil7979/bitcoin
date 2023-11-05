@@ -473,6 +473,14 @@
     .monkey_card{
         width: 100% ;
     }
+    .banner_text h2 { 
+        width: 283px;
+        word-spacing: 7px;
+        margin: 0 auto;
+    }
+    .banner_area .row {
+        flex-direction: column-reverse;
+    }
     .tokenomic_right h3 { 
         font-size: 35px; 
     }
@@ -641,6 +649,9 @@
     .roadmap_single {
         flex: 0 0 100%; 
     }
+    .change_right h3 {  
+        word-spacing: 10px;
+    } 
     .footer_area {
         padding-top: 270px;
     }
