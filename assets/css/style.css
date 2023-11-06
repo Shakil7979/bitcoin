@@ -22,7 +22,7 @@ time, mark, audio, span, video {
    background: transparent;
 }
 body{ 
-	font-family: 'Plus Jakarta Sans', sans-serif; 
+	font-family: 'Plus Jakarta Sans', sans-serif;  
 }
 table {
    border-collapse: collapse;
@@ -683,6 +683,12 @@ p {
 	padding: 30px 18px;
 	width: 450px;
 	text-align: left;
+	transition: 0.3s;
+}
+
+.stage_item:hover{
+	opacity: 0.83;
+	background: var(--MAIN, linear-gradient(135deg, #a56f1e 0%, #a0573d 53.25%, #d36c5f 100%));
 }
 
 .stage_item p {

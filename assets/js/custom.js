@@ -90,3 +90,4 @@ $(document).on('click','.bars_menu',function(){
   $('.menu').slideToggle();
 }); 
 
+AOS.init();
