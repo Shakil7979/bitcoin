@@ -293,8 +293,8 @@
     .section_padding {
         padding: 50px 0;
     } 
-    #countdown ul li p { 
-        font-size: 26px; 
+    .monekey_info p { 
+        font-size: 16px; 
     }
     .footer_area { 
         margin-top: 140px;
