@@ -24,6 +24,10 @@ time, mark, audio, span, video {
 body{ 
 	font-family: 'Plus Jakarta Sans', sans-serif;  
 }
+
+h1, h2, h3, h4, h5, h6 {
+	word-spacing: 5px;
+}
 table {
    border-collapse: collapse;
    border-spacing: 0;
@@ -344,6 +348,11 @@ p {
 
 .feature_item img {
 	width: 100%;
+	transition: 0.3s;
+}
+
+.feature_item img:hover {
+	transform: scale(1.2);
 }
 
 .feature_item {
@@ -397,6 +406,7 @@ p {
 	font-weight: 600;
 	line-height: 130%;
 	letter-spacing: -1.44px;
+	word-spacing: 11px;
 }
 
 .btn_3 {
@@ -474,7 +484,7 @@ p {
 
 .how_to_single {
 	border-radius: 10px;
-	border: 2px solid #FFF;
+	border: 3px solid #FFF;
 	background: #252733;
 	backdrop-filter: blur(125.5px);
 	text-align: center;
@@ -813,7 +823,7 @@ p {
 .roadmap_single {
 	padding: 85px 27px;
 	border-radius: 10px;
-	border: 2px solid var(--STROKE, #FFF);
+	border: 3px solid var(--STROKE, #FFF);
 	background: #252733;
 	backdrop-filter: blur(125.5px);
 	position: relative;
