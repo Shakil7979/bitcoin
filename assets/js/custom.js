@@ -70,21 +70,21 @@ buttons.forEach((btn) => {
 });
 
 
-// $(document).ready(function(){
-//   $('.accordion-head.active').click();
+$(document).ready(function(){
+  // $('.accordion-head.active').click();
 
 
-//   $('.menu ul li a,.monkey_footer a,.header_btn  a, .tokenomics_scroll').click(function(){
+  $('.menu ul li a,.monkey_footer a,.header_btn  a, .tokenomics_scroll').click(function(){
 
-//     $('html,body').animate({
-//       scrollTop:$($(this).attr('href')).offset().top
-//     },1000);
+    $('html,body').animate({
+      scrollTop:$($(this).attr('href')).offset().top
+    },1000);
 
-//     return false;
-//   });
+    return false;
+  });
 
 
-// });
+});
 
 $(document).on('click','.bars_menu',function(){
   $('.menu').slideToggle();
