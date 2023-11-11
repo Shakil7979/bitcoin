@@ -150,11 +150,11 @@ p {
 }
 
 .logo a span {
-	color: #FFF;
-	font-family: 'Lilita One', cursive; 
+	color: #FFF; 
+	font-family: 'Manrope', sans-serif;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 120.7%;
 	text-transform: uppercase;
 }
