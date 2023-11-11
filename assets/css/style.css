@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 
 /* Default CSS */
 html, body, div, span, object, iframe,
@@ -421,7 +421,7 @@ p {
 	color: #F2B253;
 	padding: 17px 16px;
 	display: inline-block;
-	font-family: Manrope;
+	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
@@ -608,6 +608,10 @@ p {
 
 .token_left img {
 	width: 100%;
+}
+
+.token_left img:hover{
+	transform: scale(1.1);
 }
 
 .token_left {
@@ -1129,6 +1133,11 @@ p {
 	background: #1A1B24;
 	padding-top: 255px;
 	position: relative;
+}
+
+.footer_logo_text{ 
+	font-family: 'Manrope', sans-serif !important;
+	font-weight: 800 !important; 
 }
 
 .join_main_footer {
