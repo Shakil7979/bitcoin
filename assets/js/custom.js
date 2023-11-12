@@ -48,26 +48,64 @@ $(document).ready(function(){
 
 
 
-const buttons = document.querySelectorAll(".accordion-title");
+// const buttons = document.querySelectorAll(".accordion-title");
 
-buttons.forEach((btn) => {
-  let target = btn.parentElement.nextElementSibling;
+// buttons.forEach((btn) => {
+//   let target = btn.parentElement.nextElementSibling;
+ 
+//   btn.setAttribute("aria-expanded", "false");
 
-  // init each button with properties
-  btn.setAttribute("aria-expanded", "false");
+//   btn.parentElement.addEventListener("click", (e) => {
+//     let isExpanded = btn.getAttribute("aria-expanded") === "true" || false;
 
-  btn.parentElement.addEventListener("click", (e) => {
-    let isExpanded = btn.getAttribute("aria-expanded") === "true" || false;
+//     btn.setAttribute("aria-expanded", !isExpanded);
+//     btn.parentElement.classList.toggle("opened");
+//     btn.previousElementSibling
+//       .querySelector("span:nth-of-type(2)")
+//       .classList.toggle("open-icon");
+//     target.classList.toggle("opened");
+//     target.hidden = isExpanded;
+//   });
+// });
 
-    btn.setAttribute("aria-expanded", !isExpanded);
-    btn.parentElement.classList.toggle("opened");
-    btn.previousElementSibling
-      .querySelector("span:nth-of-type(2)")
-      .classList.toggle("open-icon");
-    target.classList.toggle("opened");
-    target.hidden = isExpanded;
+$(document).ready(function () {
+  // Add minus icon for collapse element which is open by default
+  $(".collapse.show").each(function () {
+    $(this)
+      .prev(".card-header")
+      .find(".fa")
+      .addClass("fa-minus")
+      .removeClass("fa-plus");
   });
+
+  // Toggle plus minus icon on show hide of collapse element
+  $(".collapse")
+    .on("show.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-plus")
+        .addClass("fa-minus");
+        $(this).closest('.card').css({'border-radius':'0 !important','background':'linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)'}); 
+    })
+    .on("hide.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-minus")
+        .addClass("fa-plus"); 
+        $(this).closest('.card').css({'border-radius':'10px !important','background':'#252733'}); 
+    });
+
+    // $(document).on('click','.btn-link',function(){
+    //   $(this).closest('.card').css({'border-radius':'0 !important','background':'linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)'}); 
+    // });
+
+    $('.show_colups').closest('.card').css({'border-radius':'0 !important','background':'linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%)'}); 
+
+
 });
+
 
 
 $(document).ready(function(){

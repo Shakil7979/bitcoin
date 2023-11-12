@@ -489,7 +489,7 @@ p {
 
 .how_to_single {
 	border-radius: 10px;
-	border: 2px solid #FFF;
+	border: 0.5px solid #FFF;
 	background: #252733;
 	backdrop-filter: blur(125.5px);
 	text-align: center;
@@ -797,6 +797,76 @@ p {
 .stage {
 	margin-bottom: 40px;
 }
+ 
+  .accordion .fa {
+	margin-right: 0.5rem;
+  }
+  .accordion button, .accordion button:hover, .accordion button:focus{
+	text-decoration: none;
+  }
+
+  .faq_question_2 .btn.btn-link.collapsed {
+	border: none;
+	background: none;
+	font-size: 0.98rem;
+	font-weight: 600;
+	width: 100%; 
+	text-align: left;
+	color: #FFF;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	opacity: 0.8799999952316284;
+	font-size: 18px !important;
+}
+
+
+.faq_question_2  .card-header {
+	padding: 40px 15px;
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,.03);  
+}
+
+.faq_question_2 .card {
+	border: none !important;
+	margin-bottom: 10px !important;
+}
+
+.faq_question_2  .btn-link {
+	font-weight: 400;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.faq_question_2 .accordion > .card .card-header { 
+	background: transparent;
+	border: none !important;
+}
+  
+.card-body {
+	/* background: linear-gradient(135deg, #F2B253 0%, #E0724A 53.25%, #E56756 100%); */
+}
+
+
+.card-body p {
+	color: #FFF;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0 29px 10px 29px;
+	line-height: normal;
+}
+
+.accordion > .card .card-header { 
+	/* padding-bottom: 0; */
+}
+
+.card { 
+	border-radius: 10px !important;
+	background-color: #252733;
+}
+ 
 
 /********** End Tokenomic CSS  *************/
 
