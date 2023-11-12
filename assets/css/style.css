@@ -489,7 +489,7 @@ p {
 
 .how_to_single {
 	border-radius: 10px;
-	border: 3px solid #FFF;
+	border: 2px solid #FFF;
 	background: #252733;
 	backdrop-filter: blur(125.5px);
 	text-align: center;
@@ -832,7 +832,7 @@ p {
 .roadmap_single {
 	padding: 85px 27px;
 	border-radius: 10px;
-	border: 3px solid var(--STROKE, #FFF);
+	border: 2px solid var(--STROKE, #FFF);
 	background: #252733;
 	backdrop-filter: blur(125.5px);
 	position: relative;
